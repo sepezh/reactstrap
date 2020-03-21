@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import axios from "axios";
+import TopNav from "./components/TopNav";
+import Home from "./components/Home";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const API_URL = "http://localhost:3001";
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { todoData: null };
+  }
+
+  componentDidMount() {
+    axios
+      .get(`${API_URL}/todos`)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ todoData: res.data });
+      })
+      .catch(err => console.log(err));
+  }
+
+  render() {
+    if (this.state.todoData) {
+      return (
+        <div className="App">
+          <TopNav />
+          <Home />
+        </div>
+      );
+    } else {
+      return <h4>Loading Data ...</h4>;
+    }
+  }
 }
 
 export default App;
