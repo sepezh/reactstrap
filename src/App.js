@@ -3,6 +3,8 @@ import "./App.css";
 import axios from "axios";
 import TopNav from "./components/TopNav";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const API_URL = "http://localhost:3001";
 class App extends Component {
@@ -24,10 +26,15 @@ class App extends Component {
   render() {
     if (this.state.todoData) {
       return (
-        <div className="App">
-          <TopNav />
-          <Home />
-        </div>
+        <Router>
+          <div className="App">
+            <TopNav />
+            <div className="contentAread">
+              <Route axact path="/" component={Home} />
+            </div>
+            <Footer />
+          </div>
+        </Router>
       );
     } else {
       return <h4>Loading Data ...</h4>;
