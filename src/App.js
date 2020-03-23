@@ -10,27 +10,33 @@ const API_URL = "http://localhost:3001";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { commentData: null };
+    this.state = { gameData: null };
   }
 
   componentDidMount() {
     axios
-      .get(`${API_URL}/comments`)
+      .get(`${API_URL}/games`)
       .then(res => {
         console.log(res.data);
-        this.setState({ commentData: res.data });
+        this.setState({ gameData: res.data });
       })
       .catch(err => console.log(err));
   }
 
   render() {
-    if (this.state.commentData) {
+    if (this.state.gameData) {
       return (
         <Router>
           <div className="App">
-            <TopNav commentData = {this.state.commentData}/>
+            <TopNav gameData={this.state.gameData} />
             <div className="contentAread">
-              <Route axact path="/" component={Home} />
+              <Route
+                axact
+                path="/"
+                render={props => (
+                  <Home {...props} gameData={this.state.gameData} />
+                )}
+              />
             </div>
             <Footer />
           </div>

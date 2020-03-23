@@ -8,12 +8,16 @@ class Home extends Component {
     super(props);
   }
   render() {
-    return (
-      <div>
-        <SiteCarousel />
-        <PostBrowser />
-      </div>
-    );
+    if (this.props.gameData) {
+      return (
+        <div>
+          <SiteCarousel gameData={this.props.gameData} />
+          <PostBrowser />
+        </div>
+      );
+    } else {
+      return null;
+    }
   }
 }
 

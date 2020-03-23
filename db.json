@@ -1,388 +1,124 @@
 {
-  "posts": [
+  "games": [
     {
-      "userId": 1,
+      "id": 0,
+      "name": "Dead Cells",
+      "genre": "Roguelike, metroidvania",
+      "yearOfRelease": "August 2018",
+      "thumbnail": "/img/thumbnails/deadThumbnail.jpg",
+      "carouselImage": "/img/carousels/deadCarousel.jpg",
+      "altText": "Dead Cells Game",
+      "caption": "Dead Cells Game",
+      "description": "In the game, the player takes the role of a slime-like creature that takes control of a corpse in a dungeon, through which they must fight their way out.",
+      "detailKey": "deadcells"
+    },
+    {
       "id": 1,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "name": "FEZ",
+      "genre": "Puzzle-platform",
+      "yearOfRelease": "April 2012",
+      "thumbnail": "/img/thumbnails/fezThumbnail.jpg",
+      "carouselImage": "/img/carousels/fezCarousel.jpg",
+      "altText": "FEZ Game",
+      "caption": "FEZ Game",
+      "description": "The player-character Gomez receives a fez that reveals his two-dimensional (2D) world to be one of four sides of a three-dimensional (3D) world.",
+      "detailKey": "fez"
     },
     {
-      "userId": 1,
       "id": 2,
-      "title": "qui est esse",
-      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+      "name": "Oddworld",
+      "genre": "Platform, action-adventure",
+      "yearOfRelease": "September 1997",
+      "thumbnail": "/img/thumbnails/oddworldThumbnail.jpg",
+      "carouselImage": "/img/carousels/oddworldCarousel.jpg",
+      "altText": "Oddworld Game",
+      "caption": "Oddworld Game",
+      "description": "Oddworld is the name of the planet on which all four Oddworld Inhabitants games are based, extant in another dimension.",
+      "detailKey": "oddworld"
     },
     {
-      "userId": 1,
       "id": 3,
-      "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-      "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+      "name": "Journey",
+      "genre": "Adventure, art game",
+      "yearOfRelease": "March 2012",
+      "thumbnail": "/img/thumbnails/journeyThumbnail.jpg",
+      "carouselImage": "/img/carousels/journeyCarousel.jpg",
+      "altText": "Journey Game",
+      "caption": "Journey Game",
+      "description": "In Journey, the player takes the role of a robed figure in a desert.",
+      "detailKey": "journey"
     },
     {
-      "userId": 1,
       "id": 4,
-      "title": "eum et est occaecati",
-      "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
+      "name": "Rayman Legends",
+      "genre": "Platform",
+      "yearOfRelease": "August 2013",
+      "thumbnail": "",
+      "carouselImage": "/img/carousels/raymanCarousel.jpg",
+      "altText": "Rayman Legends Game",
+      "caption": "Rayman Legends Game",
+      "description": "Its plot takes place one century after the events of Rayman Origins. Rayman, Globox and the Teensies have been sleeping for a century.",
+      "detailKey": "raymanlegends"
     },
     {
-      "userId": 1,
       "id": 5,
-      "title": "nesciunt quas odio",
-      "body": "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque"
+      "name": "",
+      "genre": "",
+      "yearOfRelease": "",
+      "thumbnail": "",
+      "carouselImage": "",
+      "altText": "",
+      "caption": "",
+      "description": "",
+      "detailKey": ""
     },
     {
-      "userId": 1,
       "id": 6,
-      "title": "dolorem eum magni eos aperiam quia",
-      "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
+      "name": "",
+      "genre": "",
+      "yearOfRelease": "",
+      "thumbnail": "",
+      "carouselImage": "",
+      "altText": "",
+      "caption": "",
+      "description": "",
+      "detailKey": ""
     },
     {
-      "userId": 1,
       "id": 7,
-      "title": "magnam facilis autem",
-      "body": "dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas"
+      "name": "",
+      "genre": "",
+      "yearOfRelease": "",
+      "thumbnail": "",
+      "carouselImage": "",
+      "altText": "",
+      "caption": "",
+      "description": "",
+      "detailKey": ""
     },
     {
-      "userId": 1,
       "id": 8,
-      "title": "dolorem dolore est ipsam",
-      "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae"
+      "name": "",
+      "genre": "",
+      "yearOfRelease": "",
+      "thumbnail": "",
+      "carouselImage": "",
+      "altText": "",
+      "caption": "",
+      "description": "",
+      "detailKey": ""
     },
     {
-      "userId": 1,
       "id": 9,
-      "title": "nesciunt iure omnis dolorem tempora et accusantium",
-      "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas"
-    },
-    {
-      "userId": 1,
-      "id": 10,
-      "title": "optio molestias id quia eum",
-      "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
-    },
-    {
-      "userId": 2,
-      "id": 11,
-      "title": "et ea vero quia laudantium autem",
-      "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi"
-    },
-    {
-      "userId": 2,
-      "id": 12,
-      "title": "in quibusdam tempore odit est dolorem",
-      "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio"
-    },
-    {
-      "userId": 2,
-      "id": 13,
-      "title": "dolorum ut in voluptas mollitia et saepe quo animi",
-      "body": "aut dicta possimus sint mollitia voluptas commodi quo doloremque\niste corrupti reiciendis voluptatem eius rerum\nsit cumque quod eligendi laborum minima\nperferendis recusandae assumenda consectetur porro architecto ipsum ipsam"
-    },
-    {
-      "userId": 2,
-      "id": 14,
-      "title": "voluptatem eligendi optio",
-      "body": "fuga et accusamus dolorum perferendis illo voluptas\nnon doloremque neque facere\nad qui dolorum molestiae beatae\nsed aut voluptas totam sit illum"
-    },
-    {
-      "userId": 2,
-      "id": 15,
-      "title": "eveniet quod temporibus",
-      "body": "reprehenderit quos placeat\nvelit minima officia dolores impedit repudiandae molestiae nam\nvoluptas recusandae quis delectus\nofficiis harum fugiat vitae"
-    },
-    {
-      "userId": 2,
-      "id": 16,
-      "title": "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio",
-      "body": "suscipit nam nisi quo aperiam aut\nasperiores eos fugit maiores voluptatibus quia\nvoluptatem quis ullam qui in alias quia est\nconsequatur magni mollitia accusamus ea nisi voluptate dicta"
-    },
-    {
-      "userId": 2,
-      "id": 17,
-      "title": "fugit voluptas sed molestias voluptatem provident",
-      "body": "eos voluptas et aut odit natus earum\naspernatur fuga molestiae ullam\ndeserunt ratione qui eos\nqui nihil ratione nemo velit ut aut id quo"
-    },
-    {
-      "userId": 2,
-      "id": 18,
-      "title": "voluptate et itaque vero tempora molestiae",
-      "body": "eveniet quo quis\nlaborum totam consequatur non dolor\nut et est repudiandae\nest voluptatem vel debitis et magnam"
-    },
-    {
-      "userId": 2,
-      "id": 19,
-      "title": "adipisci placeat illum aut reiciendis qui",
-      "body": "illum quis cupiditate provident sit magnam\nea sed aut omnis\nveniam maiores ullam consequatur atque\nadipisci quo iste expedita sit quos voluptas"
-    },
-    {
-      "userId": 2,
-      "id": 20,
-      "title": "doloribus ad provident suscipit at",
-      "body": "qui consequuntur ducimus possimus quisquam amet similique\nsuscipit porro ipsam amet\neos veritatis officiis exercitationem vel fugit aut necessitatibus totam\nomnis rerum consequatur expedita quidem cumque explicabo"
-    }
-  ],
-  "comments": [
-    {
-      "postName": "Aa",
-      "id": 1,
-      "name": "id labore ex et quam laborum",
-      "email": "Eliseo@gardner.biz",
-      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
-    },
-    {
-      "postName": "Bb",
-      "id": 2,
-      "name": "quo vero reiciendis velit similique earum",
-      "email": "Jayne_Kuhic@sydney.com",
-      "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
-    },
-    {
-      "postName": "Cc",
-      "id": 3,
-      "name": "odio adipisci rerum aut animi",
-      "email": "Nikita@garfield.biz",
-      "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
-    },
-    {
-      "postName": "Dd",
-      "id": 4,
-      "name": "alias odio sit",
-      "email": "Lew@alysha.tv",
-      "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
-    },
-    {
-      "postName": "Ee",
-      "id": 5,
-      "name": "vero eaque aliquid doloribus et culpa",
-      "email": "Hayden@althea.biz",
-      "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
-    },
-    {
-      "postName": "Ff",
-      "id": 6,
-      "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
-      "email": "Presley.Mueller@myrl.com",
-      "body": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
-    },
-    {
-      "postName": "Gg",
-      "id": 7,
-      "name": "repellat consequatur praesentium vel minus molestias voluptatum",
-      "email": "Dallas@ole.me",
-      "body": "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor"
-    },
-    {
-      "postName": "Hh",
-      "id": 8,
-      "name": "et omnis dolorem",
-      "email": "Mallory_Kunze@marie.org",
-      "body": "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
-    },
-    {
-      "postName": "Ii",
-      "id": 9,
-      "name": "provident id voluptas",
-      "email": "Meghan_Littel@rene.us",
-      "body": "sapiente assumenda molestiae atque\nadipisci laborum distinctio aperiam et ab ut omnis\net occaecati aspernatur odit sit rem expedita\nquas enim ipsam minus"
-    },
-    {
-      "postName": "Jj",
-      "id": 10,
-      "name": "eaque et deleniti atque tenetur ut quo ut",
-      "email": "Carmen_Keeling@caroline.name",
-      "body": "voluptate iusto quis nobis reprehenderit ipsum amet nulla\nquia quas dolores velit et non\naut quia necessitatibus\nnostrum quaerat nulla et accusamus nisi facilis"
-    },
-    {
-      "postName": "Kk",
-      "id": 11,
-      "name": "fugit labore quia mollitia quas deserunt nostrum sunt",
-      "email": "Veronica_Goodwin@timmothy.net",
-      "body": "ut dolorum nostrum id quia aut est\nfuga est inventore vel eligendi explicabo quis consectetur\naut occaecati repellat id natus quo est\nut blanditiis quia ut vel ut maiores ea"
-    },
-    {
-      "postName": "Ll",
-      "id": 12,
-      "name": "modi ut eos dolores illum nam dolor",
-      "email": "Oswald.Vandervort@leanne.org",
-      "body": "expedita maiores dignissimos facilis\nipsum est rem est fugit velit sequi\neum odio dolores dolor totam\noccaecati ratione eius rem velit"
-    },
-    {
-      "postName": "Mm",
-      "id": 13,
-      "name": "aut inventore non pariatur sit vitae voluptatem sapiente",
-      "email": "Kariane@jadyn.tv",
-      "body": "fuga eos qui dolor rerum\ninventore corporis exercitationem\ncorporis cupiditate et deserunt recusandae est sed quis culpa\neum maiores corporis et"
-    },
-    {
-      "postName": "Nn",
-      "id": 14,
-      "name": "et officiis id praesentium hic aut ipsa dolorem repudiandae",
-      "email": "Nathan@solon.io",
-      "body": "vel quae voluptas qui exercitationem\nvoluptatibus unde sed\nminima et qui ipsam aspernatur\nexpedita magnam laudantium et et quaerat ut qui dolorum"
-    },
-    {
-      "postName": "Oo",
-      "id": 15,
-      "name": "debitis magnam hic odit aut ullam nostrum tenetur",
-      "email": "Maynard.Hodkiewicz@roberta.com",
-      "body": "nihil ut voluptates blanditiis autem odio dicta rerum\nquisquam saepe et est\nsunt quasi nemo laudantium deserunt\nmolestias tempora quo quia"
-    },
-    {
-      "postName": "Pp",
-      "id": 16,
-      "name": "perferendis temporibus delectus optio ea eum ratione dolorum",
-      "email": "Christine@ayana.info",
-      "body": "iste ut laborum aliquid velit facere itaque\nquo ut soluta dicta voluptate\nerror tempore aut et\nsequi reiciendis dignissimos expedita consequuntur libero sed fugiat facilis"
-    },
-    {
-      "postName": "Qq",
-      "id": 17,
-      "name": "eos est animi quis",
-      "email": "Preston_Hudson@blaise.tv",
-      "body": "consequatur necessitatibus totam sed sit dolorum\nrecusandae quae odio excepturi voluptatum harum voluptas\nquisquam sit ad eveniet delectus\ndoloribus odio qui non labore"
-    },
-    {
-      "postName": "Rr",
-      "id": 18,
-      "name": "aut et tenetur ducimus illum aut nulla ab",
-      "email": "Vincenza_Klocko@albertha.name",
-      "body": "veritatis voluptates necessitatibus maiores corrupti\nneque et exercitationem amet sit et\nullam velit sit magnam laborum\nmagni ut molestias"
-    },
-    {
-      "postName": "Ss",
-      "id": 19,
-      "name": "sed impedit rerum quia et et inventore unde officiis",
-      "email": "Madelynn.Gorczany@darion.biz",
-      "body": "doloribus est illo sed minima aperiam\nut dignissimos accusantium tempore atque et aut molestiae\nmagni ut accusamus voluptatem quos ut voluptates\nquisquam porro sed architecto ut"
-    },
-    {
-      "postName": "Tt",
-      "id": 20,
-      "name": "molestias expedita iste aliquid voluptates",
-      "email": "Mariana_Orn@preston.org",
-      "body": "qui harum consequatur fugiat\net eligendi perferendis at molestiae commodi ducimus\ndoloremque asperiores numquam qui\nut sit dignissimos reprehenderit tempore"
-    }
-  ],
-  "todos": [
-    {
-      "userId": 1,
-      "id": 1,
-      "title": "delectus aut autem",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 2,
-      "title": "quis ut nam facilis et officia qui",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 3,
-      "title": "fugiat veniam minus",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 4,
-      "title": "et porro tempora",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 5,
-      "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 6,
-      "title": "qui ullam ratione quibusdam voluptatem quia omnis",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 7,
-      "title": "illo expedita consequatur quia in",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 8,
-      "title": "quo adipisci enim quam ut ab",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 9,
-      "title": "molestiae perspiciatis ipsa",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 10,
-      "title": "illo est ratione doloremque quia maiores aut",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 11,
-      "title": "vero rerum temporibus dolor",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 12,
-      "title": "ipsa repellendus fugit nisi",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 13,
-      "title": "et doloremque nulla",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 14,
-      "title": "repellendus sunt dolores architecto voluptatum",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 15,
-      "title": "ab voluptatum amet voluptas",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 16,
-      "title": "accusamus eos facilis sint et aut voluptatem",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 17,
-      "title": "quo laboriosam deleniti aut qui",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 18,
-      "title": "dolorum est consequatur ea mollitia in culpa",
-      "completed": false
-    },
-    {
-      "userId": 1,
-      "id": 19,
-      "title": "molestiae ipsa aut voluptatibus pariatur dolor nihil",
-      "completed": true
-    },
-    {
-      "userId": 1,
-      "id": 20,
-      "title": "ullam nobis libero sapiente ad optio sint",
-      "completed": true
+      "name": "",
+      "genre": "",
+      "yearOfRelease": "",
+      "thumbnail": "",
+      "carouselImage": "",
+      "altText": "",
+      "caption": "",
+      "description": "",
+      "detailKey": ""
     }
   ]
 }

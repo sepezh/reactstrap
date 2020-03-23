@@ -34,7 +34,7 @@ class TopNav extends Component {
   }
 
   render() {
-    const CommentSelections = this.props.commentData.map(item => {
+    const gameSelections = this.props.gameData.map(item => {
       return (
         <DropdownItem key={item.detailKey}>
           <Link to={{ pathname: "/detail/" + item.detailKey }}>
@@ -60,16 +60,16 @@ class TopNav extends Component {
                 <DropdownToggle nav caret className="nav-item">
                   <i className="fas fa-comments"></i> Feedbacks
                 </DropdownToggle>
-                <DropdownMenu right>{CommentSelections}</DropdownMenu>
+                <DropdownMenu right>{gameSelections}</DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
                 <NavLink href="/find-a-comment" className="nav-item">
-                  <i className="fas fa-search"></i> Find A Comment
+                  <i className="fas fa-search"></i> Find A Game
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/writ-and-post" className="nav-item">
-                  <i className="fas fa-comment-dots"></i> Writ A Comment
+                  <i className="fas fa-comment-dots"></i> Add A Game
                 </NavLink>
               </NavItem>
             </Nav>
