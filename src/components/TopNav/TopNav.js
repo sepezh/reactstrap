@@ -14,13 +14,16 @@ import {
   DropdownItem
 } from "reactstrap";
 import { Link } from "react-router-dom";
+
 class TopNav extends Component {
   constructor(props) {
     super(props);
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      navCollapsed: true,
+      showNavbar: false
     };
   }
 
@@ -31,41 +34,41 @@ class TopNav extends Component {
   }
 
   render() {
-    const CommentSelections = this.props.commentData.map((item) => {
-      return <DropdownItem key={item.detailKey}>
-        <Link to={{pathname: "/detail/" + item.detailKey}}>
-          {item.model}
-        </Link>
-      </DropdownItem>
+    const CommentSelections = this.props.commentData.map(item => {
+      return (
+        <DropdownItem key={item.detailKey}>
+          <Link to={{ pathname: "/detail/" + item.detailKey }}>
+            {item.postName}
+          </Link>
+        </DropdownItem>
+      );
     }, this);
 
     return (
       <div>
-        <Navbar color="light" light>
+        <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Posting customer feedback</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">
+                <NavLink className="nav-item" href="/">
                   <i className="fas fa-home"></i> Home
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+                <DropdownToggle nav caret className="nav-item">
                   <i className="fas fa-comments"></i> Feedbacks
                 </DropdownToggle>
-                <DropdownMenu right>
-                  {CommentSelections}
-                </DropdownMenu>
+                <DropdownMenu right>{CommentSelections}</DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/find-a-comment">
+                <NavLink href="/find-a-comment" className="nav-item">
                   <i className="fas fa-search"></i> Find A Comment
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/writ-and-post">
+                <NavLink href="/writ-and-post" className="nav-item">
                   <i className="fas fa-comment-dots"></i> Writ A Comment
                 </NavLink>
               </NavItem>
