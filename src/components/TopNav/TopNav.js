@@ -11,9 +11,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
+  DropdownItem
 } from "reactstrap";
-
+import { Link } from "react-router-dom";
 class TopNav extends Component {
   constructor(props) {
     super(props);
@@ -29,33 +29,46 @@ class TopNav extends Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render() {
+    const CommentSelections = this.props.commentData.map((item) => {
+      return <DropdownItem key={item.detailKey}>
+        <Link to={{pathname: "/detail/" + item.detailKey}}>
+          {item.model}
+        </Link>
+      </DropdownItem>
+    }, this);
+
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+        <Navbar color="light" light>
+          <NavbarBrand href="/">Posting customer feedback</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="mr-auto" navbar>
+            <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">
-                  GitHub
+                <NavLink href="/">
+                  <i className="fas fa-home"></i> Home
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  <i className="fas fa-comments"></i> Feedbacks
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Reset</DropdownItem>
+                  {CommentSelections}
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/find-a-comment">
+                  <i className="fas fa-search"></i> Find A Comment
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/writ-and-post">
+                  <i className="fas fa-comment-dots"></i> Writ A Comment
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
