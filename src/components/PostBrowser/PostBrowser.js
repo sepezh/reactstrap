@@ -46,7 +46,7 @@ class PostBrowser extends Component {
       );
     });
     return (
-      <div>
+      <div className="postBrowser">
         <Container>
           <Row>{gameSelection}</Row>
         </Container>
