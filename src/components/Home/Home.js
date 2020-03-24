@@ -12,7 +12,7 @@ class Home extends Component {
       return (
         <div>
           <SiteCarousel gameData={this.props.gameData} />
-          <PostBrowser />
+          <PostBrowser gameData={this.props.gameData} />
         </div>
       );
     } else {
