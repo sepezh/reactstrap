@@ -13,6 +13,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
+
 import { Link } from "react-router-dom";
 
 class TopNav extends Component {
@@ -22,8 +23,6 @@ class TopNav extends Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      navCollapsed: true,
-      showNavbar: false
     };
   }
 
@@ -38,7 +37,7 @@ class TopNav extends Component {
       return (
         <DropdownItem key={item.detailKey}>
           <Link to={{ pathname: "/detail/" + item.detailKey }}>
-            {item.postName}
+            {item.name}
           </Link>
         </DropdownItem>
       );

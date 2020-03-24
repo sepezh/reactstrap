@@ -29,7 +29,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <TopNav gameData={this.state.gameData} />
-            <div className="contentAread">
+            <div className="contentArea">
               <Route
                 axact
                 path="/"
