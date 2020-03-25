@@ -7,9 +7,9 @@ import {
   Form,
   FormGroup,
   Input,
-  ListGroup,
-  ListGroupItem,
-  Badge,
+  // ListGroup,
+  // ListGroupItem,
+  // Badge,
   Table,
   Button,
   InputGroup,
@@ -44,7 +44,12 @@ class GamenetLocator extends Component {
     this.setState({ searchTerm: "" });
   }
   render() {
-    if (this.state.gamenets) {
+    if (this.state.gamenets == null) {
+      return null;
+    } else if (this.state.gamenets) {
+      // const filteredData = this.state.gamenets.filter(data =>
+      //   (data).includes(this.state.searchTerm)
+      // );
       let searchBar = (
         <div>
           <h1>
@@ -59,7 +64,7 @@ class GamenetLocator extends Component {
                       type="text"
                       onChange={this.handleInputChange}
                       value={this.state.searchTerm}
-                      name="user_addres"
+                      name="user_address"
                       placeholder="We're probably nearby. What state are you in?"
                     />
                     <InputGroupAddon addonType="append">
@@ -72,9 +77,44 @@ class GamenetLocator extends Component {
           </Row>
         </div>
       );
-      return <div>{searchBar}</div>;
-    } else {
-      return null;
+      return (
+        <div>
+          {searchBar}
+
+          <Row>
+            <Col sm={12} md={{ size: 10, offset: 1 }}>
+              <Table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Gamenet</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                    <th>Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {this.state.gamenets.map((item, i) => {
+                    return (
+                      <tr key={item.phone}>
+                        <td>{String(i)}</td>
+                        <td>{item.gamenetName}</td>
+                        <td>{item.address}</td>
+                        <td>{item.city}</td>
+                        <td>{item.state}</td>
+                        <td>{item.zip}</td>
+                        <td>{item.phone}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </Table>
+            </Col>
+          </Row>
+        </div>
+      );
     }
   }
 }
