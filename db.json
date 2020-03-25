@@ -120,5 +120,52 @@
       "description": "As in Diablo II, multiplayer games are possible using Blizzard's Battle.net service,[6] with many of the new features developed for StarCraft II also available in Diablo III.",
       "detailKey": "diablo3"
     }
+  ],
+  "gamenets": [
+    {
+      "gamenetName": "Cyberg Gamenet",
+      "address": "555 Nearby St.  Ada, Oklahoma 74820",
+      "phone": "1-800-fly-cars"
+    },
+    {
+      "gamenetName": "Matrix Gamenet",
+      "address": "123 Test St. Dallas Texas, 75001",
+      "phone": "1-800-pay-here"
+    },
+    {
+      "gamenetName": "Nexus Gamenet",
+      "address": "234 Booyah Ln. San Mateo California, 75001",
+      "phone": "1-888-fak-enum"
+    }
+  ],
+  "mailingList": [
+    {
+      "customerName": "Bruce Van Horn",
+      "email": "actual@contentfour.com",
+      "budget": "5000",
+      "phone": "123-5678",
+      "id": 0
+    },
+    {
+      "customerName": "Karina Van Horn",
+      "email": "test@test.com",
+      "budget": "5500",
+      "phone": "987-6543",
+      "id": 1
+    },
+    {
+      "customerName": "test",
+      "email": "test@test.com",
+      "budget": "6050",
+      "phone": "666-2345",
+      "id": 2
+    },
+    {
+      "customerName": "test",
+      "email": "test@test.com",
+      "budget": "3000",
+      "phone": "564-2317",
+      "id": 3
+    }
   ]
 }

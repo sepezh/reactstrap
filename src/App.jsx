@@ -4,7 +4,7 @@ import axios from "axios";
 import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import DealerLocator from "./components/DealerLocator";
+import GamenetLocator from "./components/GamenetLocator";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const API_URL = "http://localhost:3001";
@@ -38,7 +38,7 @@ class App extends Component {
                   <Home {...props} gameData={this.state.gameData} />
                 )}
               />
-              <Route path="/find-a-dealer" component={DealerLocator} />
+              <Route path="/find-a-gamenet" component={GamenetLocator} />
             </div>
             <Footer />
           </div>

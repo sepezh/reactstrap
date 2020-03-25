@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.css";
 import SiteCarousel from "../SiteCarousel";
-import PostBrowser from "../PostBrowser";
+import GameBrowser from "../GameBrowser";
 
 class Home extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class Home extends Component {
       return (
         <div>
           <SiteCarousel gameData={this.props.gameData} />
-          <PostBrowser gameData={this.props.gameData} />
+          <GameBrowser gameData={this.props.gameData} />
         </div>
       );
     } else {

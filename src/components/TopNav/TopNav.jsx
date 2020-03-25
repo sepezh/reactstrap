@@ -22,7 +22,7 @@ class TopNav extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false,
+      isOpen: false
     };
   }
 
@@ -62,8 +62,8 @@ class TopNav extends Component {
                 <DropdownMenu right>{gameSelections}</DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/find-a-comment" className="nav-item">
-                  <i className="fas fa-search"></i> Find A Game
+                <NavLink href="/find-a-gamenet" className="nav-item">
+                  <i className="fas fa-search"></i> Find A Gamenet
                 </NavLink>
               </NavItem>
               <NavItem>

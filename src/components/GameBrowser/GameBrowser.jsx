@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./PostBrowser.css";
+import "./GameBrowser.css";
 import {
   Container,
   Row,
@@ -14,7 +14,7 @@ import {
 } from "reactstrap";
 import Numeral from "numeral";
 
-class PostBrowser extends Component {
+class GameBrowser extends Component {
   constructor(props) {
     super(props);
   }
@@ -39,14 +39,14 @@ class PostBrowser extends Component {
               <CardText>Start at {Numeral(item.msrp).format("$0,0")}</CardText>
               <NavLink href={"/detail/" + item.detailKey}>Details</NavLink>
               <NavLink href="/build-and-price">Add a feedback</NavLink>
-              <NavLink href="/find-a-dealer">Dealer Near You</NavLink>
+              <NavLink href="/find-a-gamenet">Gamenet Near You</NavLink>
             </CardBody>
           </Card>
         </Col>
       );
     });
     return (
-      <div className="postBrowser">
+      <div className="gameBrowser">
         <Container>
           <Row>{gameSelection}</Row>
         </Container>
@@ -55,4 +55,4 @@ class PostBrowser extends Component {
   }
 }
 
-export default PostBrowser;
+export default GameBrowser;
