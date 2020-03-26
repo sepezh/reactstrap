@@ -7,9 +7,9 @@ import {
   Form,
   FormGroup,
   Input,
-  // ListGroup,
-  // ListGroupItem,
-  // Badge,
+  ListGroup,
+  ListGroupItem,
+  Badge,
   Table,
   Button,
   InputGroup,
@@ -24,15 +24,31 @@ class GamenetLocator extends Component {
     this.state = { searchTerm: "", gamenets: null };
     this.handleInputChange = this.handleInputChange.bind(this);
     this.onClearClicked = this.onClearClicked.bind(this);
+    this.onListClick = this.onListClick.bind(this);
   }
 
   componentDidMount() {
     axios
       .get(`${API_URL}/gamenets`)
       .then(res => {
-        this.setState({ gamenets: res.data });
+        let stateCounter = res.data.reduce(function(
+          gamenetStateCount,
+          gamenet
+        ) {
+          gamenetStateCount[gamenet.state] =
+            (gamenetStateCount[gamenet.state] || 0) + 1;
+          return gamenetStateCount;
+        },
+        this);
+        this.setState({ gamenets: res.data, stateCounter: stateCounter });
       })
       .catch(err => console.log(err));
+  }
+
+  onListClick(eventData) {
+    eventData.preventDefault();
+    const stateClicked = eventData.target.text.split(" ")[0];
+    this.setState({ searchTerm: stateClicked });
   }
 
   handleInputChange(eventData) {
@@ -48,7 +64,7 @@ class GamenetLocator extends Component {
       return null;
     } else if (this.state.gamenets) {
       // const filteredData = this.state.gamenets.filter(data =>
-      //   (data).includes(this.state.searchTerm)
+      //   data.state.includes(this.state.searchTerm)
       // );
       let searchBar = (
         <div>
@@ -77,44 +93,83 @@ class GamenetLocator extends Component {
           </Row>
         </div>
       );
-      return (
-        <div>
-          {searchBar}
 
-          <Row>
-            <Col sm={12} md={{ size: 10, offset: 1 }}>
-              <Table>
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Gamenet</th>
-                    <th>Address</th>
-                    <th>City</th>
-                    <th>State</th>
-                    <th>Zip</th>
-                    <th>Phone</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {this.state.gamenets.map((item, i) => {
-                    return (
-                      <tr key={item.phone}>
-                        <td>{String(i)}</td>
-                        <td>{item.gamenetName}</td>
-                        <td>{item.address}</td>
-                        <td>{item.city}</td>
-                        <td>{item.state}</td>
-                        <td>{item.zip}</td>
-                        <td>{item.phone}</td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </Table>
-            </Col>
-          </Row>
-        </div>
-      );
+      if (this.state.searchTerm.length < 3) {
+        let stateCounterMarkup = null;
+        if (this.state.stateCounter) {
+          stateCounterMarkup = (
+            <Row>
+              <Col sm={12} md={{ size: 10, offset: 1 }}>
+                <ListGroup>
+                  {Object.keys(this.state.stateCounter)
+                    .sort()
+                    .map(function(key, i) {
+                      if (typeof this.state.stateCounter[key] === "number") {
+                        return (
+                          <ListGroupItem
+                            tag="a"
+                            href="#"
+                            key={key + i}
+                            onClick={this.onListClick}
+                            className="justify-content-between"
+                          >
+                            {key}
+                            <Badge pill>{this.state.stateCounter[key]}</Badge>
+                          </ListGroupItem>
+                        );
+                      }
+                    }, this)}
+                </ListGroup>
+              </Col>
+            </Row>
+          );
+          return (
+            <div>
+              {searchBar}
+              {stateCounterMarkup}
+            </div>
+          );
+        }
+      } else {
+        return (
+          <div>
+            {searchBar}
+
+            <Row>
+              <Col sm={12} md={{ size: 10, offset: 1 }}>
+                <Table>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Gamenet</th>
+                      <th>Address</th>
+                      <th>City</th>
+                      <th>State</th>
+                      <th>Zip</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {this.state.gamenets.map((item, i) => {
+                      return (
+                        <tr key={item.phone}>
+                          <td>{String(i)}</td>
+                          <td>{item.gamenetName}</td>
+                          <td>{item.address}</td>
+                          <td>{item.city}</td>
+                          <td>{item.state}</td>
+                          <td>{item.zip}</td>
+                          <td>{item.phone}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </Table>
+              </Col>
+            </Row>
+          </div>
+        );
+      }
     }
   }
 }

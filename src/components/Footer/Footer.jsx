@@ -8,8 +8,8 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <a href="/schedule-test-flight">
-          Schedule a Test Flight! No pilot's license requared
+        <a href="/schedule-test-play">
+          Schedule a Test Play! No player's license requared
         </a>
       </footer>
     );

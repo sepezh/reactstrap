@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import GamenetLocator from "./components/GamenetLocator";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import TestPlayForm from "./components/TestPlayForm";
 
 const API_URL = "http://localhost:3001";
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
                 )}
               />
               <Route path="/find-a-gamenet" component={GamenetLocator} />
+              <Route path="/schedule-test-play" component={TestPlayForm} />
             </div>
             <Footer />
           </div>
