@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./GamenetLocator.css";
-import axios from "axios";
+import Axios from "axios";
 import {
   Row,
   Col,
@@ -28,8 +28,7 @@ class GamenetLocator extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get(`${API_URL}/gamenets`)
+    Axios.get(`${API_URL}/gamenets`)
       .then(res => {
         let stateCounter = res.data.reduce(function(
           gamenetStateCount,

@@ -46,7 +46,7 @@ class TopNav extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Posting customer feedback</NavbarBrand>
+          <NavbarBrand href="/">Posting The Best Games</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -57,7 +57,7 @@ class TopNav extends Component {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret className="nav-item">
-                  <i className="fas fa-comments"></i> Feedbacks
+                  <i className="fas fa-comments"></i> Games
                 </DropdownToggle>
                 <DropdownMenu right>{gameSelections}</DropdownMenu>
               </UncontrolledDropdown>

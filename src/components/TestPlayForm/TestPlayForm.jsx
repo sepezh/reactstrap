@@ -57,7 +57,7 @@ class TestPlayForm extends Component {
             <CardTitle>Schedule a Test Play</CardTitle>
             <CardSubtitle>No gamer's license required</CardSubtitle>
             <CardText>
-              Fill out form fields below to schedule a test flight.
+              Fill out form fields below to schedule a test play.
             </CardText>
             <Form>
               <FormGroup>
