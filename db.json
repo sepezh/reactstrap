@@ -4,9 +4,17 @@
       "id": 0,
       "name": "Dead Cells",
       "genre": "Roguelike, metroidvania",
-      "yearOfRelease": "August 2018",
+      "firstRelease": "August 2018",
       "thumbnail": "/img/thumbnails/deadThumbnail.jpg",
       "carouselImage": "/img/carousels/deadCarousel.jpg",
+      "msrp": 15,
+      "Platforms": [
+        {
+          "Microsoft Windows, macOS, Linux, Nintendo Switch, PlayStation 4, Xbox One": "7 August 2018"
+        },
+        { "iOS": "28 August 2019" },
+        { "Android": "2020" }
+      ],
       "altText": "Dead Cells Game",
       "caption": "Dead Cells Game",
       "description": "In the game, the player takes the role of a slime-like creature that takes control of a corpse in a dungeon, through which they must fight their way out.",
@@ -16,9 +24,17 @@
       "id": 1,
       "name": "FEZ",
       "genre": "Puzzle-platform",
-      "yearOfRelease": "April 2012",
+      "firstRelease": "April 2012",
       "thumbnail": "/img/thumbnails/fezThumbnail.jpg",
       "carouselImage": "/img/carousels/fezCarousel.jpg",
+      "msrp": 17,
+      "Platform(s)": [
+        { "Xbox 360": "13 April 2012" },
+        { "Windows": "1 May 2013" },
+        { "Linux, OS X": "11 September 2013" },
+        { "PlayStation 3, PlayStation 4, PlayStation Vita": "25 March 2014" },
+        { "iOS": "13 December 2017" }
+      ],
       "altText": "FEZ Game",
       "caption": "FEZ Game",
       "description": "The player-character Gomez receives a fez that reveals his two-dimensional (2D) world to be one of four sides of a three-dimensional (3D) world.",
@@ -28,9 +44,20 @@
       "id": 2,
       "name": "Oddworld",
       "genre": "Platform, action-adventure",
-      "yearOfRelease": "September 1997",
+      "firstRelease": "September 1997",
       "thumbnail": "/img/thumbnails/oddworldThumbnail.jpg",
       "carouselImage": "/img/carousels/oddworldCarousel.jpg",
+      "msrp": 14,
+      "Platforms": [
+        [
+          "PlayStation, MS-DOS, Windows, Game Boy, Game Boy Color, Xbox, Xbox 360, Xbox One, Game Boy Advance",
+          "19 September 1997"
+        ],
+        [
+          "PlayStation 3, PlayStation 4, PlayStation Portable, PlayStation Vita, Wii U, Nintendo Switch, OS X, Linux, iOS, Android, Ouya",
+          "29 October 2018"
+        ]
+      ],
       "altText": "Oddworld Game",
       "caption": "Oddworld Game",
       "description": "Oddworld is the name of the planet on which all four Oddworld Inhabitants games are based, extant in another dimension.",
@@ -40,9 +67,16 @@
       "id": 3,
       "name": "Journey",
       "genre": "Adventure, art game",
-      "yearOfRelease": "March 2012",
+      "firstRelease": "March 2012",
       "thumbnail": "/img/thumbnails/journeyThumbnail.jpg",
       "carouselImage": "/img/carousels/journeyCarousel.jpg",
+      "msrp": 17,
+      "Platforms": [
+        { "PlayStation 3": "March 14, 2012" },
+        { "PlayStation 4": "July 21, 2015" },
+        { "Microsoft Windows": "June 6, 2019" },
+        { "iOS": "August 6, 2019" }
+      ],
       "altText": "Journey Game",
       "caption": "Journey Game",
       "description": "In Journey, the player takes the role of a robed figure in a desert.",
@@ -52,9 +86,18 @@
       "id": 4,
       "name": "Rayman Legends",
       "genre": "Platform",
-      "yearOfRelease": "August 2013",
+      "firstRelease": "August 2013",
       "thumbnail": "/img/thumbnails/raymanThumbnail.jpg",
       "carouselImage": "/img/carousels/raymanCarousel.jpg",
+      "msrp": 23,
+      "Platforms": [
+        {
+          "Microsoft Windows, Xbox 360, PlayStation 3, Wii UWii U": "30 August 2013"
+        },
+        { "Nintendo Switch": "12 September 2017" },
+        { "PlayStation 4, Xbox One": "21 February 2014" },
+        { "PlayStation Vita": "13 September 2013" }
+      ],
       "altText": "Rayman Legends Game",
       "caption": "Rayman Legends Game",
       "description": "Its plot takes place one century after the events of Rayman Origins. Rayman, Globox and the Teensies have been sleeping for a century.",
@@ -64,9 +107,17 @@
       "id": 5,
       "name": "INSIDE",
       "genre": "Puzzle-platformer, adventure",
-      "yearOfRelease": "June 2016",
+      "firstRelease": "June 2016",
       "thumbnail": "/img/thumbnails/insideThumbnail.jpg",
       "carouselImage": "/img/carousels/insideCarousel.jpg",
+      "msrp": 14,
+      "Platforms": [
+        { "Xbox One": "29 June 2016" },
+        { "Microsoft Windows": "7 July 2016" },
+        { "PlayStation 4": "23 August 2016" },
+        { "iOS": "December 15, 2017" },
+        { "Nintendo Switch": "June 28, 2018" }
+      ],
       "altText": "INSIDE Game",
       "caption": "INSIDE Game",
       "description": "The player character is an unnamed boy who explores a surreal and mostly monochromatic environment presented as a 2.5D platform game. The game is dark, with color used sparingly to highlight both the player and certain parts of the environment.",
@@ -76,9 +127,20 @@
       "id": 6,
       "name": "Never Alone(Kisima Inŋitchuŋa)",
       "genre": "Puzzle-platformer",
-      "yearOfRelease": "November 2014",
+      "firstRelease": "November 2014",
       "thumbnail": "/img/thumbnails/neverThumbnail.jpg",
       "carouselImage": "/img/carousels/neverCarousel.jpg",
+      "msrp": 16,
+      "Platforms": [
+        { "Microsoft Windows": "18 November 2014" },
+        { "Xbox One": "19 November 2014" },
+        { "PlayStation 4": "26 November 2014" },
+        { "OS X": "26 February 2015" },
+        { "PlayStation 3": "22 December 2015" },
+        { "Linux": "23 December 2015" },
+        { "Wii U": "9 July 2015" },
+        { "iOS": "June 2, 2016" }
+      ],
       "altText": "Never Alone Game",
       "caption": "Never Alone Game",
       "description": "The player-character plays as the Iñupiaq girl Nuna and her Arctic fox.",
@@ -88,9 +150,23 @@
       "id": 7,
       "name": "Limbo",
       "genre": "Puzzle, platform",
-      "yearOfRelease": "July 2010",
+      "firstRelease": "July 2010",
       "thumbnail": "/img/thumbnails/limboThumbnail.jpg",
       "carouselImage": "/img/carousels/limboCarousel.jpg",
+      "msrp": 14,
+      "Platforms": [
+        { "Xbox 360": "21 July 2010" },
+        { "PlayStation 3": "19 July 2011" },
+        { "Microsoft Windows": "2 August 2011" },
+        { "OS X": "21 December 2011" },
+        { "PlayStation Vita": "4 June 2013" },
+        { "iOS": "3 July 2013" },
+        { "Linux": "23 June 2014" },
+        { "Xbox One": "5 December 2014" },
+        { "Android": "11 February 2015" },
+        { "PlayStation 4": "24 February 2015" },
+        { "Nintendo Switch": "28 June 2018" }
+      ],
       "altText": "Limbo Game",
       "caption": "Limbo Game",
       "description": "The dark visuals serve to conceal numerous lethal surprises, including such environmental and physical hazards as deadly bear traps on the forest floor, or lethal monsters hiding in the shadows. ",
@@ -100,9 +176,16 @@
       "id": 8,
       "name": "Hollow Knight",
       "genre": "Metroidvania",
-      "yearOfRelease": "February 2017",
+      "firstRelease": "February 2017",
       "thumbnail": "/img/thumbnails/hollowknightThumbnail.jpg",
       "carouselImage": "/img/carousels/hollowknightCarousel.jpg",
+      "msrp": 14,
+      "Platforms": [
+        { "Microsoft Windows": "24 February 2017" },
+        { "macOS, Linux": "11 April 2017" },
+        { "Nintendo Switch": "12 June 2018" },
+        { "PlayStation 4, Xbox One": "25 September 2018" }
+      ],
       "altText": "Hollow Knight Game",
       "caption": "Hollow Knight Game",
       "description": "",
@@ -112,9 +195,16 @@
       "id": 9,
       "name": "Diablo III",
       "genre": "Action role-playing, hack and slash",
-      "yearOfRelease": "May 2012",
+      "firstRelease": "May 2012",
       "thumbnail": "/img/thumbnails/diablo3Thumbnail.jpg",
       "carouselImage": "/img/carousels/diablo3Carousel.jpg",
+      "msrp": 16,
+      "Platforms": [
+        { "OS X , Microsoft Windows": "15 May 2012" },
+        { "PlayStation 3, Xbox 360": "3 September 2013" },
+        { "PlayStation 4, Xbox One": "19 August 2014" },
+        { "Nintendo Switch": "2 November 2018" }
+      ],
       "altText": "Diablo Game",
       "caption": "Diablo Game",
       "description": "As in Diablo II, multiplayer games are possible using Blizzard's Battle.net service,[6] with many of the new features developed for StarCraft II also available in Diablo III.",
@@ -152,34 +242,6 @@
       "budget": "5500",
       "phone": "987-6543",
       "id": 1
-    },
-    {
-      "customerName": "test",
-      "email": "test@test.com",
-      "budget": "6050",
-      "phone": "666-2345",
-      "id": 2
-    },
-    {
-      "customerName": "test",
-      "email": "test@test.com",
-      "budget": "3000",
-      "phone": "564-2317",
-      "id": 3
-    },
-    {
-      "customerName": "sepide",
-      "email": "spd.slmnzhd@gmail.com",
-      "phone": "09382744226",
-      "budget": "5500",
-      "id": 4
-    },
-    {
-      "customerName": "test",
-      "email": "test@gmail.com",
-      "budget": "1234",
-      "phone": "123456",
-      "id": 5
     }
   ]
 }

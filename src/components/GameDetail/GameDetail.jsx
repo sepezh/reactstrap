@@ -27,7 +27,7 @@ class GameDetail extends Component {
         <Row>
           <Col>
             <h1>
-              {selectedGameData.yearOfRelease} {selectedGameData.genre}
+              {selectedGameData.firstRelease} {selectedGameData.genre}
             </h1>
             <h2>{selectedGameData.caption}</h2>
           </Col>

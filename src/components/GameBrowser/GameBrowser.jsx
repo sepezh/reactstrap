@@ -15,10 +15,6 @@ import {
 import Numeral from "numeral";
 
 class GameBrowser extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const gameSelection = this.props.gameData.map(item => {
       return (

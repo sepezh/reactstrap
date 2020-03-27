@@ -8,6 +8,7 @@ import GamenetLocator from "./components/GamenetLocator";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import TestPlayForm from "./components/TestPlayForm";
 import GameDetail from "./components/GameDetail";
+import BuildAndPrice from "./components/BuildAndPrice";
 
 const API_URL = "http://localhost:3001";
 class App extends Component {
@@ -45,6 +46,16 @@ class App extends Component {
                 path="/detail/:selectedGame"
                 render={props => (
                   <GameDetail {...props} gameData={this.state.gameData} />
+                )}
+              />
+              \
+              <Route
+                path="/build-and-price"
+                render={props => (
+                  <BuildAndPrice
+                    {...props}
+                    vehicleData={this.state.vehicleData}
+                  />
                 )}
               />
             </div>

@@ -4,9 +4,6 @@ import SiteCarousel from "../SiteCarousel";
 import GameBrowser from "../GameBrowser";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     if (this.props.gameData) {
       return (
