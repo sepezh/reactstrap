@@ -94,25 +94,22 @@ class DealerLocator extends React.Component {
                 <ListGroup>
                   {Object.keys(this.state.stateCounter)
                     .sort()
-                    .map(
-                      (function(key, i) {
-                        if (typeof this.state.stateCounter[key] === "number") {
-                          return (
-                            <ListGroupItem
-                              tag="a"
-                              href="#"
-                              key={key + i}
-                              onClick={this.onListClick}
-                              className="justify-content-between"
-                            >
-                              {key}{" "}
-                              <Badge pill>{this.state.stateCounter[key]}</Badge>
-                            </ListGroupItem>
-                          );
-                        }
-                      },
-                      this)
-                    )}
+                    .map(function(key, i) {
+                      if (typeof this.state.stateCounter[key] === "number") {
+                        return (
+                          <ListGroupItem
+                            tag="a"
+                            href="#"
+                            key={key + i}
+                            onClick={this.onListClick}
+                            className="justify-content-between"
+                          >
+                            {key}{" "}
+                            <Badge pill>{this.state.stateCounter[key]}</Badge>
+                          </ListGroupItem>
+                        );
+                      }
+                    }, this)}
                 </ListGroup>
               </Col>
             </Row>
