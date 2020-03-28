@@ -1,229 +1,203 @@
 {
-  "games": [
+  "vehicles": [
     {
-      "id": 0,
-      "name": "Dead Cells",
-      "genre": "Roguelike, metroidvania",
-      "firstRelease": "August 2018",
-      "thumbnail": "/img/thumbnails/deadThumbnail.jpg",
-      "carouselImage": "/img/carousels/deadCarousel.jpg",
-      "msrp": 15,
-      "Platforms": [
-        {
-          "Microsoft Windows, macOS, Linux, Nintendo Switch, PlayStation 4, Xbox One": "7 August 2018"
-        },
-        { "iOS": "28 August 2019" },
-        { "Android": "2020" }
-      ],
-      "altText": "Dead Cells Game",
-      "caption": "Dead Cells Game",
-      "description": "In the game, the player takes the role of a slime-like creature that takes control of a corpse in a dungeon, through which they must fight their way out.",
-      "detailKey": "deadcells"
-    },
-    {
-      "id": 1,
-      "name": "FEZ",
-      "genre": "Puzzle-platform",
-      "firstRelease": "April 2012",
-      "thumbnail": "/img/thumbnails/fezThumbnail.jpg",
-      "carouselImage": "/img/carousels/fezCarousel.jpg",
-      "msrp": 17,
-      "Platform(s)": [
-        { "Xbox 360": "13 April 2012" },
-        { "Windows": "1 May 2013" },
-        { "Linux, OS X": "11 September 2013" },
-        { "PlayStation 3, PlayStation 4, PlayStation Vita": "25 March 2014" },
-        { "iOS": "13 December 2017" }
-      ],
-      "altText": "FEZ Game",
-      "caption": "FEZ Game",
-      "description": "The player-character Gomez receives a fez that reveals his two-dimensional (2D) world to be one of four sides of a three-dimensional (3D) world.",
-      "detailKey": "fez"
-    },
-    {
-      "id": 2,
-      "name": "Oddworld",
-      "genre": "Platform, action-adventure",
-      "firstRelease": "September 1997",
-      "thumbnail": "/img/thumbnails/oddworldThumbnail.jpg",
-      "carouselImage": "/img/carousels/oddworldCarousel.jpg",
-      "msrp": 14,
-      "Platforms": [
+      "model": "Jumper J-1",
+      "tagline": "Commuting Convenience",
+      "modelYear": "2018",
+      "thumbnail": "/img/thumbnails/jumper/jumper-red-thumbnails00.png",
+      "colors": [
         [
-          "PlayStation, MS-DOS, Windows, Game Boy, Game Boy Color, Xbox, Xbox 360, Xbox One, Game Boy Advance",
-          "19 September 1997"
+          "White Dwarf",
+          "/img/thumbnails/jumper/jumper-white-thumbnails10.png",
+          "white"
         ],
         [
-          "PlayStation 3, PlayStation 4, PlayStation Portable, PlayStation Vita, Wii U, Nintendo Switch, OS X, Linux, iOS, Android, Ouya",
-          "29 October 2018"
+          "Red Giant",
+          "/img/thumbnails/jumper/jumper-red-thumbnails10.png",
+          "red"
         ]
       ],
-      "altText": "Oddworld Game",
-      "caption": "Oddworld Game",
-      "description": "Oddworld is the name of the planet on which all four Oddworld Inhabitants games are based, extant in another dimension.",
-      "detailKey": "oddworld"
+      "carouselImage": "/img/carousel/jumper-01.png",
+      "altText": "2018 Jumper J-1",
+      "caption": "2018 Jumper J-1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper quam eu velit commodo sagittis. Nam at massa finibus, placerat nulla ac, aliquam mauris. Aenean a libero id odio molestie consectetur id vitae felis. Curabitur vitae lectus consequat, vestibulum orci ut, pulvinar dui. Curabitur cursus cursus tortor gravida tempus. Phasellus eget sagittis lorem. Integer elementum, diam vel sagittis tincidunt, arcu velit sollicitudin mi, eu molestie purus nisl in nulla. Fusce volutpat metus ut metus rhoncus aliquam.",
+      "detailKey": "jumper",
+      "msrp": 36000,
+      "options": {
+        "engines": [
+          {
+            "name": "Alpha Centauri Mark II",
+            "image": "/img/engines/engine1.png",
+            "cost": 0,
+            "nmpg": 75,
+            "thrust": "245 kN",
+            "topspeed": 20
+          },
+          {
+            "name": "Singularity Engine Mark V",
+            "image": "/img/engines/engine2.png",
+            "cost": 2250,
+            "nmpg": 55,
+            "thrust": "545 kN",
+            "topspeed": 60
+          }
+        ]
+      }
     },
     {
-      "id": 3,
-      "name": "Journey",
-      "genre": "Adventure, art game",
-      "firstRelease": "March 2012",
-      "thumbnail": "/img/thumbnails/journeyThumbnail.jpg",
-      "carouselImage": "/img/carousels/journeyCarousel.jpg",
-      "msrp": 17,
-      "Platforms": [
-        { "PlayStation 3": "March 14, 2012" },
-        { "PlayStation 4": "July 21, 2015" },
-        { "Microsoft Windows": "June 6, 2019" },
-        { "iOS": "August 6, 2019" }
+      "model": "Spidi GT",
+      "tagline": "Your Ultimate Getaway Car",
+      "modelYear": "2018",
+      "thumbnail": "/img/thumbnails/spidi/spidi-blue-thumbnails00.png",
+      "colors": [
+        [
+          "White Dwarf",
+          "/img/thumbnails/spidi/spidi-white-thumbnails10.png",
+          "white"
+        ],
+        [
+          "Black Hole",
+          "/img/thumbnails/spidi/spidi-black-thumbnails10.png",
+          "black"
+        ],
+        [
+          "Red Giant",
+          "/img/thumbnails/spidi/spidi-red-thumbnails10.png",
+          "red"
+        ],
+        [
+          "Main Sequence Blue",
+          "/img/thumbnails/spidi/spidi-blue-thumbnails10.png",
+          "blue"
+        ],
+        [
+          "Solar Yellow",
+          "/img/thumbnails/spidi/spidi-yellow-thumbnails10.png",
+          "yellow"
+        ]
       ],
-      "altText": "Journey Game",
-      "caption": "Journey Game",
-      "description": "In Journey, the player takes the role of a robed figure in a desert.",
-      "detailKey": "journey"
+      "carouselImage": "/img/carousel/spidi-01.png",
+      "altText": "2018 Spidi - Your Ultimate Getaway Car",
+      "caption": "2018 Spidi",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper quam eu velit commodo sagittis. Nam at massa finibus, placerat nulla ac, aliquam mauris. Aenean a libero id odio molestie consectetur id vitae felis. Curabitur vitae lectus consequat, vestibulum orci ut, pulvinar dui. Curabitur cursus cursus tortor gravida tempus. Phasellus eget sagittis lorem. Integer elementum, diam vel sagittis tincidunt, arcu velit sollicitudin mi, eu molestie purus nisl in nulla. Fusce volutpat metus ut metus rhoncus aliquam.",
+      "detailKey": "spidi",
+      "msrp": 42000,
+      "options": {
+        "engines": [
+          {
+            "name": "Boson Accelerator Mark III",
+            "image": "/img/engine3.png",
+            "cost": 0,
+            "nmpg": 75,
+            "thrust": "245 kN",
+            "topspeed": 20
+          },
+          {
+            "name": "Singularity Engine Mark V",
+            "image": "/img/engines/engine2.png",
+            "cost": 2250,
+            "nmpg": 55,
+            "thrust": "545 kN",
+            "topspeed": 60
+          }
+        ]
+      }
     },
     {
-      "id": 4,
-      "name": "Rayman Legends",
-      "genre": "Platform",
-      "firstRelease": "August 2013",
-      "thumbnail": "/img/thumbnails/raymanThumbnail.jpg",
-      "carouselImage": "/img/carousels/raymanCarousel.jpg",
-      "msrp": 23,
-      "Platforms": [
-        {
-          "Microsoft Windows, Xbox 360, PlayStation 3, Wii UWii U": "30 August 2013"
-        },
-        { "Nintendo Switch": "12 September 2017" },
-        { "PlayStation 4, Xbox One": "21 February 2014" },
-        { "PlayStation Vita": "13 September 2013" }
+      "model": "AirBike",
+      "tagline": "New Perspective on Fun",
+      "modelYear": "2018",
+      "thumbnail": "/img/thumbnails/air-bike/air-bike-purple-thumbnails00.png",
+      "colors": [
+        [
+          "Nebula Purple",
+          "/img/thumbnails/air-bike/air-bike-purple-thumbnails10.png",
+          "purple"
+        ],
+        [
+          "Main Sequence Blue",
+          "/img/thumbnails/air-bike/air-bike-blue-thumbnails10.png",
+          "blue"
+        ],
+        [
+          "Black Hole",
+          "/img/thumbnails/air-bike/air-bike-black-thumbnails10.png",
+          "black"
+        ],
+        [
+          "Solar Yellow",
+          "/img/thumbnails/air-bike/air-bike-yellow-thumbnails10.png",
+          "yellow"
+        ]
       ],
-      "altText": "Rayman Legends Game",
-      "caption": "Rayman Legends Game",
-      "description": "Its plot takes place one century after the events of Rayman Origins. Rayman, Globox and the Teensies have been sleeping for a century.",
-      "detailKey": "raymanlegends"
+      "carouselImage": "/img/carousel/air-bike-01.png",
+      "altText": "2018 AirBike",
+      "caption": "2018 AirBike",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper quam eu velit commodo sagittis. Nam at massa finibus, placerat nulla ac, aliquam mauris. Aenean a libero id odio molestie consectetur id vitae felis. Curabitur vitae lectus consequat, vestibulum orci ut, pulvinar dui. Curabitur cursus cursus tortor gravida tempus. Phasellus eget sagittis lorem. Integer elementum, diam vel sagittis tincidunt, arcu velit sollicitudin mi, eu molestie purus nisl in nulla. Fusce volutpat metus ut metus rhoncus aliquam.",
+      "detailKey": "air-bike",
+      "msrp": 18500,
+      "options": {
+        "engines": [
+          {
+            "name": "Alpha Centauri Mark II",
+            "image": "/img/engines/engine1.png",
+            "cost": 0,
+            "nmpg": 75,
+            "thrust": "245 kN",
+            "topspeed": 20
+          },
+          {
+            "name": "Singularity Engine Mark V",
+            "image": "/img/engines/engine2.png",
+            "cost": 2250,
+            "nmpg": 55,
+            "thrust": "545 kN",
+            "topspeed": 60
+          }
+        ]
+      }
     },
     {
-      "id": 5,
-      "name": "INSIDE",
-      "genre": "Puzzle-platformer, adventure",
-      "firstRelease": "June 2016",
-      "thumbnail": "/img/thumbnails/insideThumbnail.jpg",
-      "carouselImage": "/img/carousels/insideCarousel.jpg",
-      "msrp": 14,
-      "Platforms": [
-        { "Xbox One": "29 June 2016" },
-        { "Microsoft Windows": "7 July 2016" },
-        { "PlayStation 4": "23 August 2016" },
-        { "iOS": "December 15, 2017" },
-        { "Nintendo Switch": "June 28, 2018" }
+      "model": "Mercury",
+      "tagline": "Professional Grade Affordable Fleets.",
+      "modelYear": "2018",
+      "thumbnail": "/img/thumbnails/mercury/mercury-white-thumbnails00.png",
+      "colors": [
+        ["White Dwarf", "/img/thumbnails/mercury-white.png", "white"]
       ],
-      "altText": "INSIDE Game",
-      "caption": "INSIDE Game",
-      "description": "The player character is an unnamed boy who explores a surreal and mostly monochromatic environment presented as a 2.5D platform game. The game is dark, with color used sparingly to highlight both the player and certain parts of the environment.",
-      "detailKey": "inside"
-    },
-    {
-      "id": 6,
-      "name": "Never Alone(Kisima Inŋitchuŋa)",
-      "genre": "Puzzle-platformer",
-      "firstRelease": "November 2014",
-      "thumbnail": "/img/thumbnails/neverThumbnail.jpg",
-      "carouselImage": "/img/carousels/neverCarousel.jpg",
-      "msrp": 16,
-      "Platforms": [
-        { "Microsoft Windows": "18 November 2014" },
-        { "Xbox One": "19 November 2014" },
-        { "PlayStation 4": "26 November 2014" },
-        { "OS X": "26 February 2015" },
-        { "PlayStation 3": "22 December 2015" },
-        { "Linux": "23 December 2015" },
-        { "Wii U": "9 July 2015" },
-        { "iOS": "June 2, 2016" }
-      ],
-      "altText": "Never Alone Game",
-      "caption": "Never Alone Game",
-      "description": "The player-character plays as the Iñupiaq girl Nuna and her Arctic fox.",
-      "detailKey": "neveralone"
-    },
-    {
-      "id": 7,
-      "name": "Limbo",
-      "genre": "Puzzle, platform",
-      "firstRelease": "July 2010",
-      "thumbnail": "/img/thumbnails/limboThumbnail.jpg",
-      "carouselImage": "/img/carousels/limboCarousel.jpg",
-      "msrp": 14,
-      "Platforms": [
-        { "Xbox 360": "21 July 2010" },
-        { "PlayStation 3": "19 July 2011" },
-        { "Microsoft Windows": "2 August 2011" },
-        { "OS X": "21 December 2011" },
-        { "PlayStation Vita": "4 June 2013" },
-        { "iOS": "3 July 2013" },
-        { "Linux": "23 June 2014" },
-        { "Xbox One": "5 December 2014" },
-        { "Android": "11 February 2015" },
-        { "PlayStation 4": "24 February 2015" },
-        { "Nintendo Switch": "28 June 2018" }
-      ],
-      "altText": "Limbo Game",
-      "caption": "Limbo Game",
-      "description": "The dark visuals serve to conceal numerous lethal surprises, including such environmental and physical hazards as deadly bear traps on the forest floor, or lethal monsters hiding in the shadows. ",
-      "detailKey": "limbo"
-    },
-    {
-      "id": 8,
-      "name": "Hollow Knight",
-      "genre": "Metroidvania",
-      "firstRelease": "February 2017",
-      "thumbnail": "/img/thumbnails/hollowknightThumbnail.jpg",
-      "carouselImage": "/img/carousels/hollowknightCarousel.jpg",
-      "msrp": 14,
-      "Platforms": [
-        { "Microsoft Windows": "24 February 2017" },
-        { "macOS, Linux": "11 April 2017" },
-        { "Nintendo Switch": "12 June 2018" },
-        { "PlayStation 4, Xbox One": "25 September 2018" }
-      ],
-      "altText": "Hollow Knight Game",
-      "caption": "Hollow Knight Game",
-      "description": "",
-      "detailKey": "hollownight"
-    },
-    {
-      "id": 9,
-      "name": "Diablo III",
-      "genre": "Action role-playing, hack and slash",
-      "firstRelease": "May 2012",
-      "thumbnail": "/img/thumbnails/diablo3Thumbnail.jpg",
-      "carouselImage": "/img/carousels/diablo3Carousel.jpg",
-      "msrp": 16,
-      "Platforms": [
-        { "OS X , Microsoft Windows": "15 May 2012" },
-        { "PlayStation 3, Xbox 360": "3 September 2013" },
-        { "PlayStation 4, Xbox One": "19 August 2014" },
-        { "Nintendo Switch": "2 November 2018" }
-      ],
-      "altText": "Diablo Game",
-      "caption": "Diablo Game",
-      "description": "As in Diablo II, multiplayer games are possible using Blizzard's Battle.net service,[6] with many of the new features developed for StarCraft II also available in Diablo III.",
-      "detailKey": "diablo3"
+      "carouselImage": "/img/carousel/mercury-01.png",
+      "altText": "Mercury Spacefaring Commercial Transport",
+      "caption": "Mercury Spacefaring Commercial Transport",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper quam eu velit commodo sagittis. Nam at massa finibus, placerat nulla ac, aliquam mauris. Aenean a libero id odio molestie consectetur id vitae felis. Curabitur vitae lectus consequat, vestibulum orci ut, pulvinar dui. Curabitur cursus cursus tortor gravida tempus. Phasellus eget sagittis lorem. Integer elementum, diam vel sagittis tincidunt, arcu velit sollicitudin mi, eu molestie purus nisl in nulla. Fusce volutpat metus ut metus rhoncus aliquam.",
+      "detailKey": "mercury",
+      "msrp": 167000,
+      "options": {
+        "engines": [
+          {
+            "name": "Mercury Mark VI",
+            "image": "/img/engines/engine4.png",
+            "cost": 0,
+            "nmpg": 75,
+            "thrust": "245 kN",
+            "topspeed": 20
+          }
+        ]
+      }
     }
   ],
-  "gamenets": [
+  "dealerships": [
     {
-      "gamenetName": "Cyberg Gamenet",
+      "dealershipName": "Slick Willy's Flying Cars",
       "address": "555 Nearby St.  Ada, Oklahoma 74820",
       "phone": "1-800-fly-cars"
     },
     {
-      "gamenetName": "Matrix Gamenet",
+      "dealershipName": "Dewey, Cheatham, &amp; Howe Auto Sales",
       "address": "123 Test St. Dallas Texas, 75001",
       "phone": "1-800-pay-here"
     },
     {
-      "gamenetName": "Nexus Gamenet",
+      "dealershipName": "Ima Crooke Flying Car Sales",
       "address": "234 Booyah Ln. San Mateo California, 75001",
       "phone": "1-888-fak-enum"
     }
@@ -232,16 +206,30 @@
     {
       "customerName": "Bruce Van Horn",
       "email": "actual@contentfour.com",
-      "budget": "5000",
-      "phone": "123-5678",
-      "id": 0
+      "budget": "500000",
+      "phone": "9728036394",
+      "id": 1
     },
     {
       "customerName": "Karina Van Horn",
       "email": "test@test.com",
-      "budget": "5500",
-      "phone": "987-6543",
-      "id": 1
+      "budget": "50001",
+      "phone": "666-2345",
+      "id": 2
+    },
+    {
+      "customerName": "test",
+      "email": "test@test.com",
+      "budget": "50000",
+      "phone": "5552345",
+      "id": 3
+    },
+    {
+      "customerName": "test",
+      "email": "test@test.com",
+      "budget": "500000",
+      "phone": "test",
+      "id": 4
     }
   ]
 }

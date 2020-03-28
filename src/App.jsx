@@ -4,51 +4,52 @@ import Axios from "axios";
 import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import GamenetLocator from "./components/GamenetLocator";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import TestPlayForm from "./components/TestPlayForm";
-import GameDetail from "./components/GameDetail";
+import DealerLocator from "./components/DealerLocator";
+import TestFlightForm from "./components/TestFlightForm";
+import VehicleDetail from "./components/VehicleDetail";
 import BuildAndPrice from "./components/BuildAndPrice";
 
-const API_URL = "http://localhost:3001";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { gameData: null };
+    this.state = { vehicleData: null };
   }
 
   componentDidMount() {
-    Axios.get(`${API_URL}/games`)
+    Axios.get("http://localhost:3001/vehicles")
       .then(res => {
         console.log(res.data);
-        this.setState({ gameData: res.data });
+        this.setState({ vehicleData: res.data });
       })
       .catch(err => console.log(err));
   }
 
   render() {
-    if (this.state.gameData) {
+    if (this.state.vehicleData) {
       return (
         <Router>
           <div className="App">
-            <TopNav gameData={this.state.gameData} />
+            <TopNav vehicleData={this.state.vehicleData} />
             <div className="contentArea">
               <Route
                 exact
                 path="/"
                 render={props => (
-                  <Home {...props} gameData={this.state.gameData} />
+                  <Home {...props} vehicleData={this.state.vehicleData} />
                 )}
               />
-              <Route path="/find-a-gamenet" component={GamenetLocator} />
-              <Route path="/schedule-test-play" component={TestPlayForm} />
+              <Route path="/find-a-dealer" component={DealerLocator} />
+              <Route path="/schedule-test-flight" component={TestFlightForm} />
               <Route
-                path="/detail/:selectedGame"
+                path="/detail/:selectedVehicle"
                 render={props => (
-                  <GameDetail {...props} gameData={this.state.gameData} />
+                  <VehicleDetail
+                    {...props}
+                    vehicleData={this.state.vehicleData}
+                  />
                 )}
               />
-              \
               <Route
                 path="/build-and-price"
                 render={props => (
@@ -64,7 +65,7 @@ class App extends Component {
         </Router>
       );
     } else {
-      return <h4>Loading Data ...</h4>;
+      return <h4>Loading Data...</h4>;
     }
   }
 }

@@ -1,10 +1,11 @@
 import React from "react";
 import classnames from "classnames";
 import "./BuildAndPrice.css";
-import ModelPicker from "../ModelPicker";
-import PlatformsSelector from "../PlatformsSelector";
-import TestPlayForm from "../TestPlayForm";
-import BuildAndPriceImageRotator from "../BuildAndPriceImageRotator";
+import ColorPicker from "../ColorPicker/ColorPicker";
+import ModelPicker from "../ModelPicker/ModelPicker";
+import EnginePicker from "../EngineSelector/EngineSelector";
+import TestFlightForm from "../TestFlightForm/TestFlightForm";
+import BuildAndPriceImageRotator from "../BuildAndPriceImageRotator/BuildAndPriceImageRotator";
 import Numeral from "numeral";
 import {
   TabContent,
@@ -25,53 +26,56 @@ class BuildAndPrice extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.selectGame = this.selectGame.bind(this);
-    this.selectManufacturer = this.selectManufacturer.bind(this);
-    this.selectPlatforms = this.selectPlatforms.bind(this);
+    this.selectVehicle = this.selectVehicle.bind(this);
+    this.selectColor = this.selectColor.bind(this);
+    this.selectEngine = this.selectEngine.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
     this.computePrice = this.computePrice.bind(this);
     this.state = {
       activeTab: "1",
-      selectedGame: "jumper",
-      userHasSelectedGame: false,
-      selectedManufacturer: 0,
-      selectedManufacturerName: "White Dwarf",
-      userHasSelectedManufacturer: false,
-      selectedPlatforms: 0,
-      selectedPlatformsName: "Alpha Centauri Mark II",
-      userHasSelectedPlatforms: false,
+      selectedVehicle: "jumper",
+      userHasSelectedVehicle: false,
+      selectedColor: 0,
+      selectedColorName: "White Dwarf",
+      userHasSelectedColor: false,
+      selectedEngine: 0,
+      selectedEngineName: "Alpha Centauri Mark II",
+      userHasSelectedEngine: false,
       modal: false,
       done: false,
+      engineCost: 0,
       msrp: 36000
     };
   }
 
-  selectGame(eventData) {
+  selectVehicle(eventData) {
     const selected = eventData.target.dataset.model;
     const msrp = eventData.target.dataset.msrp;
     this.setState({
       activeTab: "2",
       msrp: msrp,
-      selectedGame: selected
+      selectedVehicle: selected
     });
   }
 
-  selectManufacturer(eventData) {
-    const selected = eventData.target.dataset.manufacturer;
-    const selectedManufacturerName = eventData.target.dataset.manufacturerName;
+  selectColor(eventData) {
+    const selected = eventData.target.dataset.color;
+    const selectedColorName = eventData.target.dataset.colorName;
     this.setState({
       activeTab: "3",
-      selectedManufacturer: Number(selected),
-      selectedManufacturerName: selectedManufacturerName
+      selectedColor: Number(selected),
+      selectedColorName: selectedColorName
     });
   }
 
-  selectPlatforms(eventData) {
-    const selected = eventData.target.dataset.platforms;
-    const platformsName = eventData.target.dataset.platformsName;
+  selectEngine(eventData) {
+    const selected = eventData.target.dataset.engine;
+    const engineCost = eventData.target.dataset.engineCost;
+    const engineName = eventData.target.dataset.engineName;
     this.setState({
-      selectePlatforms: Number(selected),
-      selectedPlatformsName: platformsName
+      selecteEngine: Number(selected),
+      selectedEngineName: engineName,
+      engineCost: engineCost
     });
   }
 
@@ -80,7 +84,7 @@ class BuildAndPrice extends React.Component {
   }
 
   computePrice() {
-    return Number(this.state.msrp) + Number(this.state.platformsCost);
+    return Number(this.state.msrp) + Number(this.state.engineCost);
   }
 
   toggle(tab) {
@@ -93,15 +97,15 @@ class BuildAndPrice extends React.Component {
       <div>
         <h3>Build and Price</h3>
         <BuildAndPriceImageRotator
-          gameData={this.props.gameData}
-          selectedGame={this.state.selectedGame}
-          manufacturerIndex={this.state.selectedManufacturer}
-          manufacturerName={this.state.selectedManufacturerName}
+          vehicleData={this.props.vehicleData}
+          selectedVehicle={this.state.selectedVehicle}
+          colorIndex={this.state.selectedColor}
+          colorName={this.state.selectedColorName}
           cost={this.computePrice()}
-          platformsIndex={this.state.selectedPlatforms}
+          engineIndex={this.state.selectedEngine}
         />
-        <h4>Manufacturer: {this.state.selectedManufacturerName}</h4>
-        <h5>Platforms: {this.state.selectedPlatformsName}</h5>
+        <h4>Color: {this.state.selectedColorName}</h4>
+        <h5>Engine: {this.state.selectedEngineName}</h5>
         <h5>
           Price as configured: {Numeral(this.computePrice()).format("$0,0.00")}
         </h5>
@@ -124,7 +128,7 @@ class BuildAndPrice extends React.Component {
                   this.toggle("2");
                 }}
               >
-                Manufacturer
+                Color
               </NavLink>
             </NavItem>
             <NavItem>
@@ -143,9 +147,21 @@ class BuildAndPrice extends React.Component {
               <Row>
                 <Col sm="12">
                   <ModelPicker
-                    gameData={this.props.gameData}
-                    selectedGame={this.props.selectedGame}
-                    selectGame={this.selectGame}
+                    vehicleData={this.props.vehicleData}
+                    selectedVehicle={this.props.selectedVehicle}
+                    selectVehicle={this.selectVehicle}
+                  />
+                </Col>
+              </Row>
+            </TabPane>
+            <TabPane tabId="2">
+              <Row>
+                <Col sm="12">
+                  <ColorPicker
+                    selectColor={this.selectColor}
+                    vehicleData={this.props.vehicleData}
+                    selectedVehicle={this.state.selectedVehicle}
+                    selectedColor={this.state.selectedColor}
                   />
                 </Col>
               </Row>
@@ -153,11 +169,11 @@ class BuildAndPrice extends React.Component {
             <TabPane tabId="3">
               <Row>
                 <Col sm="12">
-                  <PlatformsSelector
-                    gameData={this.props.gameData}
-                    onPlatformsSelect={this.selectPlatforms}
-                    selectedGame={this.state.selectedGame}
-                    selectedPlatforms={this.state.selectedPlatforms}
+                  <EnginePicker
+                    vehicleData={this.props.vehicleData}
+                    onEngineSelect={this.selectEngine}
+                    selectedVehicle={this.state.selectedVehicle}
+                    selectedEngine={this.state.selectedEngine}
                   />
                 </Col>
               </Row>
@@ -168,10 +184,10 @@ class BuildAndPrice extends React.Component {
               Schedule a Test Flight!
             </ModalHeader>
             <ModalBody>
-              <TestPlayForm />
+              <TestFlightForm />
             </ModalBody>
             <ModalFooter>
-              <Button manufacturer="primary" onClick={this.toggleModal}>
+              <Button color="primary" onClick={this.toggleModal}>
                 Done!
               </Button>
             </ModalFooter>

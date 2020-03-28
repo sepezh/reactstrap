@@ -22,13 +22,14 @@ class BuildAndPriceImageRotator extends React.Component {
   }
 
   buildItems() {
-    const selectedGameData = this.props.gameData.filter(
-      game => game.detailKey === this.props.selectedGame
+    const selectedVehicleData = this.props.vehicleData.filter(
+      vehicle => vehicle.detailKey === this.props.selectedVehicle
     )[0];
     let items = [];
     for (let i = 0; i < 21; i++) {
-      let url = "/images/thumbnails/" + this.props.selectedGame;
-      url += "/" + this.props.selectedGame;
+      let url = "/img/thumbnails/" + this.props.selectedVehicle;
+      url += "/" + this.props.selectedVehicle;
+      url += "-" + selectedVehicleData.colors[Number(this.props.colorIndex)][2];
       url += "-thumbnails" + Numeral(i).format("00") + ".png";
       items.push({ src: url, altText: "", caption: "" });
     }

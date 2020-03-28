@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Home.css";
 import SiteCarousel from "../SiteCarousel";
-import GameBrowser from "../GameBrowser";
+import VehicleBrowser from "../VehicleBrowser";
 
-class Home extends Component {
+class Home extends React.Component {
   render() {
-    if (this.props.gameData) {
+    if (this.props.vehicleData) {
       return (
         <div>
-          <SiteCarousel gameData={this.props.gameData} />
-          <GameBrowser gameData={this.props.gameData} />
+          <SiteCarousel vehicleData={this.props.vehicleData} />
+          <VehicleBrowser vehicleData={this.props.vehicleData} />
         </div>
       );
     } else {

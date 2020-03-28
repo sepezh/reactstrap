@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./SiteCarousel.css";
 import {
   Carousel,
@@ -8,7 +8,7 @@ import {
   CarouselCaption
 } from "reactstrap";
 
-class SiteCarousel extends Component {
+class SiteCarousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = { activeIndex: 0 };
@@ -30,7 +30,7 @@ class SiteCarousel extends Component {
   next() {
     if (this.animating) return;
     const nextIndex =
-      this.state.activeIndex === this.props.gameData.length - 1
+      this.state.activeIndex === this.props.vehicleData.length - 1
         ? 0
         : this.state.activeIndex + 1;
     this.setState({ activeIndex: nextIndex });
@@ -40,7 +40,7 @@ class SiteCarousel extends Component {
     if (this.animating) return;
     const nextIndex =
       this.state.activeIndex === 0
-        ? this.props.gameData.length - 1
+        ? this.props.vehicleData.length - 1
         : this.state.activeIndex - 1;
     this.setState({ activeIndex: nextIndex });
   }
@@ -52,7 +52,8 @@ class SiteCarousel extends Component {
 
   render() {
     const { activeIndex } = this.state;
-    const slides = this.props.gameData.map(item => {
+
+    const slides = this.props.vehicleData.map(item => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
@@ -78,7 +79,7 @@ class SiteCarousel extends Component {
         previous={this.previous}
       >
         <CarouselIndicators
-          items={this.props.gameData}
+          items={this.props.vehicleData}
           activeIndex={activeIndex}
           onClickHandler={this.goToIndex}
         />

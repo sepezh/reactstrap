@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Footer.css";
 
-class Footer extends Component {
+class Footer extends React.Component {
   render() {
     return (
       <footer>
-        <a href="/schedule-test-play">
-          Schedule a Test Play! No player's license requared
+        <a href="/schedule-test-flight">
+          Schedule a Test Flight! No pilot's license required
         </a>
       </footer>
     );

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./TopNav.css";
 import {
   Collapse,
@@ -16,7 +16,7 @@ import {
 
 import { Link } from "react-router-dom";
 
-class TopNav extends Component {
+class TopNav extends React.Component {
   constructor(props) {
     super(props);
 
@@ -33,11 +33,11 @@ class TopNav extends Component {
   }
 
   render() {
-    const gameSelections = this.props.gameData.map(item => {
+    const VehicleSelections = this.props.vehicleData.map(item => {
       return (
         <DropdownItem key={item.detailKey}>
           <Link to={{ pathname: "/detail/" + item.detailKey }}>
-            {item.name}
+            {item.model}
           </Link>
         </DropdownItem>
       );
@@ -46,29 +46,29 @@ class TopNav extends Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Posting The Best Games</NavbarBrand>
+          <NavbarBrand href="/">flying car dealership</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink className="nav-item" href="/">
+                <NavLink href="/">
                   <i className="fas fa-home"></i> Home
                 </NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret className="nav-item">
-                  <i className="fas fa-comments"></i> Games
+                <DropdownToggle nav caret>
+                  <i className="fas fa-space-shuttle"></i> Flying Cars
                 </DropdownToggle>
-                <DropdownMenu right>{gameSelections}</DropdownMenu>
+                <DropdownMenu right>{VehicleSelections}</DropdownMenu>
               </UncontrolledDropdown>
               <NavItem>
-                <NavLink href="/find-a-gamenet" className="nav-item">
-                  <i className="fas fa-search"></i> Find A Gamenet
+                <NavLink href="/find-a-dealer">
+                  <i className="fas fa-map-marker-alt"></i> Find A Dealer
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/writ-and-post" className="nav-item">
-                  <i className="fas fa-comment-dots"></i> Add A Game
+                <NavLink href="/build-and-price">
+                  <i className="fas fa-cog"></i> Build And Price
                 </NavLink>
               </NavItem>
             </Nav>

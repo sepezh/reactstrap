@@ -23,27 +23,27 @@ class ModelPickerCollapse extends React.Component {
   }
 
   render() {
-    const game = this.props.selectedGame;
+    const vehicle = this.props.selectedVehicle;
     return (
       <div className="clickableMedia">
         <Media>
           <Media left href="#">
             <Media
               object
-              className="gameImage"
-              src={game.thumbnail}
-              alt={game.model}
+              className="vehicleImage"
+              src={vehicle.thumbnail}
+              alt={vehicle.model}
             />
           </Media>
           <Media body>
-            <Media heading>{game.model}</Media>
+            <Media heading>{vehicle.model}</Media>
             <div>
-              {game.tagline} <br /> <br />
-              <span>Start at {Numeral(game.msrp).format("$0,0")}</span>
+              {vehicle.tagline} <br /> <br />
+              <span>Start at {Numeral(vehicle.msrp).format("$0,0")}</span>
               <br />
               <span>
                 <i className="fas fa-gas-pump"></i>
-                {game.options.engines[0].nmpg} NMPG
+                {vehicle.options.engines[0].nmpg} NMPG
               </span>
             </div>
           </Media>
@@ -56,9 +56,9 @@ class ModelPickerCollapse extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
-              data-model={game.detailKey}
-              data-msrp={game.msrp}
-              onClick={this.props.selectGame}
+              data-model={vehicle.detailKey}
+              data-msrp={vehicle.msrp}
+              onClick={this.props.selectVehicle}
             >
               Select
             </NavLink>
@@ -66,7 +66,7 @@ class ModelPickerCollapse extends React.Component {
         </Nav>
         <Collapse isOpen={this.state.collapse}>
           <Card>
-            <CardBody>{game.description}</CardBody>
+            <CardBody>{vehicle.description}</CardBody>
           </Card>
         </Collapse>
       </div>

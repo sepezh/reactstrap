@@ -8,12 +8,12 @@ class ModelPicker extends React.Component {
       <div>
         <Row>
           <Col sm="12">
-            {this.props.vehicleData.map(function(game, i) {
+            {this.props.vehicleData.map(function(vehicle, i) {
               return (
                 <ModelPickerCollapse
-                  key={"model-picker-" + game.detailKey}
-                  selectedGame={game}
-                  selectGame={this.props.selectGame}
+                  key={"model-picker-" + vehicle.detailKey}
+                  selectedVehicle={vehicle}
+                  selectVehicle={this.props.selectVehicle}
                 />
               );
             }, this)}
