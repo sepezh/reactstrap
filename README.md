@@ -68,5 +68,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
-Theme based on bootstrap v4 
+Theme based on reactstrap v8
 ### [Demo](https://sepezh.github.io/reactstrap/src/)
