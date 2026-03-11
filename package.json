@@ -13,7 +13,7 @@
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
     "faker": "^4.1.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.7.1",
     "json-server": "^0.16.3",
     "numeral": "^2.0.6",
     "react": "^16.13.1",
